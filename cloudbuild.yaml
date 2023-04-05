@@ -24,4 +24,7 @@ steps:
 timeout: 1200s
 images:
   - '$PROJECT_ID/$_SERVICE_NAME:$COMMIT_SHA'
+options:
+  logging: CLOUD_LOGGING_ONLY
+  serviceAccount: 188757432325-compute@developer.gserviceaccount.com
 
