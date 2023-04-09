@@ -4,7 +4,7 @@ COPY ./package*.json ./
 
 RUN npm ci
 
-COPY . ./
+COPY ./ ./
 RUN npm run build
 
 FROM nginx:1.23.0-alpine
